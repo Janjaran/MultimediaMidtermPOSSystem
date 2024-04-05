@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bean Haven Café - POS System</title>
+  <link rel="stylesheet" href="posstyles.css">
+  <style>
+    /* Add any additional CSS styling here */
+  </style>
+</head>
+<body>
+    <div class="background-rectangle"></div>
+    <header>
+        <img src="logo.png" alt="Bean Haven Café Logo" class="logo">
+        <h1>Bean Haven Cafe</h1>
+        <a href="index.html"><button>Home</button></a>
+      </header>
+      
+
+      <div class="container">
+        <div class="menu-container">
+            <h2>Menu</h2>
+            <div class="menu">
+      
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="coffeebg.png" alt="French Vanilla Cappuccino">
+          <h3>French Vanilla Cappuccino</h3>
+          <p>Price: PHP 150</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="americano.png" alt="Classic Americano">
+          <h3>Classic Americano</h3>
+          <p>Price: PHP 120</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="hazelnut.png" alt="Iced Hazelnut Macchiato">
+          <h3>Iced Hazelnut Macchiato</h3>
+          <p>Price: PHP 140</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="spanish.png" alt="Iced Spanish Latte">
+          <h3>Iced Spanish Latte</h3>
+          <p>Price: PHP 150</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="caramel.png" alt="Iced Caramel Latte">
+          <h3>Iced Caramel Latte</h3>
+          <p>Price: PHP 150</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="peppermint.png" alt="Iced Peppermint Mocha">
+          <h3>Iced Peppermint Mocha</h3>
+          <p>Price: PHP 170</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="mocha.png" alt="Mocha Latte">
+          <h3>Mocha Latte</h3>
+          <p>Price: PHP 180</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item-container">
+        <div class="menu-item">
+          <img src="espresso.png" alt="Turkish Espresso">
+          <h3>Turkish Espresso</h3>
+          <p>Price: PHP 130</p>
+          <div class="quantity">
+            <input type="number" min="1" value="1">
+            <button>Add to Order</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ordered-items-container">
+    <div class="ordered-items">
+        <h2>Ordered Items</h2>
+        <div class="ordered-items-list">
+            <!-- Ordered items will be dynamically added here -->
+        </div>
+        <div class="total-amount">
+            <h3>Total Amount: PHP <span id="total-amount">0.00</span></h3>
+        </div>
+        <div class="payment">
+            <input type="number" min="0" placeholder="Enter amount paid">
+            <button id="pay-btn">Pay</button>
+            <p id="change"></p>
+        </div>
+    </div>
+</div>
+</div>
+
+  <footer>
+    <p>&copy; 2024 Bean Haven Café</p>
+  </footer>
+
+  <script src="pos.js"></script>
+</body>
+</html>

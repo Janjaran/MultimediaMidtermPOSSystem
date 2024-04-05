@@ -1,0 +1,212 @@
+/* Add this CSS to your posstyles.css file */
+
+
+
+header .logo {
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin-bottom: 5px; /* Add margin-bottom to the logo */
+}
+
+header {
+    background-color: #e6b79d;
+    color: brown;
+    padding: 5px 0; /* Adjusted padding */
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+}
+
+header button {
+    background-color: #362d2d;
+    color: white;
+    padding: 8px 16px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Adjusted font size */
+    cursor: pointer;
+}
+.container h2 {
+    justify-content: center;
+    display: flex;
+}
+
+header h1 {
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 32px; /* Adjusted font size */
+    font-weight: bold;
+    color: #362d2d;
+    margin-top: 2px; /* Adjust the margin-top to reduce the gap */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex; /* Set the container to flex */
+    justify-content: space-between; /* Space elements evenly */
+}
+
+.menu-container,
+.ordered-items-container {
+    flex: 1; /* Each container takes up equal space */
+     margin-top: 20px;
+}
+
+.ordered-items {
+    margin-top: 65px; /* Adjust the margin-top as needed to move the container down */
+}
+
+.menu-container {
+    flex: 1; /* Each container takes up equal space */
+    margin-right: 10px; /* Add a small margin between containers */
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the min and max width as needed */
+    grid-gap: 20px;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Scale up the size when hovered */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+.menu-item img {
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #362d2d;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-item .quantity {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item .quantity input {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.menu-item button {
+    background-color: #362d2d;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.menu-item button:hover {
+    transform: scale(1.1); /* Scale up the size when hovered */
+}
+
+.ordered-items {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.ordered-items h2 {
+    font-size: 1.5rem;
+    color: #362d2d;
+    margin-bottom: 20px;
+}
+
+.ordered-items-list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.ordered-items-list p {
+    margin-bottom: 10px;
+}
+.receipt-container {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.receipt {
+    border-top: 2px dashed #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.receipt-item .name {
+    font-weight: bold;
+}
+
+.receipt-item .price {
+    font-style: italic;
+}
+
+
+
+
+.total-amount {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-amount h3 {
+    font-size: 1.2rem;
+    color: #362d2d;
+}
+
+.payment {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.payment input {
+    padding: 8px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.payment button {
+    background-color: #362d2d;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
